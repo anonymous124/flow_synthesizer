@@ -2,7 +2,7 @@
 
 This repository describes the additional material and experiments around "Generative timbre spaces with variational audio synthesis" submitted at DaFX 2018.
 
-For a better viewing experience of these additional results, please **visit the [corresponding Github pages website](https://anonymous.github.io/flow_synthesizer/ "DaFX 2018 - Latent spaces")**
+For a better viewing experience of these additional results, please **visit the [corresponding Github pages website](https://anonymous124.github.io/flow_synthesizer/ "DaFX 2018 - Latent spaces")**
 
 This [supporting page](https://acids-ircam.github.io/variational-timbre/ "DaFX 2018 - Latent spaces") directly embeds the exposed elements
   * Supplementary figures
