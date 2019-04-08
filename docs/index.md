@@ -15,23 +15,22 @@
 
 # Generative variational timbre spaces
 
-This repository describes the additional material and experiments around the paper ["Generative timbre spaces with variational audio synthesis"](dafx18generative.pdf) submitted at the 2018 DaFX Conference.
+This website presents additional material and experiments around the paper *Generative timbre spaces with variational audio synthesis*.
 
-Timbre spaces have been used in music perception to study the perceptual relationships between instruments based on dissimilarity ratings. However, these spaces do not generalize, need to be reconstructed for each novel example and are not continuous, preventing audio synthesis. In parallel, generative models have aimed to provide methods for synthesizing novel timbres. However, these systems do not provide an explicit control structure, nor do they provide an understanding of their inner workings and are usually not related to any perceptually relevant information.
-Here, we show that Variational Auto-Encoders (VAE) can alleviate all of these limitations by constructing _variational generative timbre spaces_. To do so, we adapt VAEs to create a generative latent space, while using perceptual ratings from timbre studies to regularize the organization of this space. The resulting space allows to analyze novel instruments, while being able to synthesize audio from any point of this space. We introduce a specific regularization allowing to directly enforce given perceptual constraints or simi- larity ratings onto these spaces. We compare the resulting space to existing timbre spaces and show that they provide almost similar distance relationships. We evaluate several spectral transforms as input and show that the Non-Stationary Gabor Transform (NSGT) provides the highest correlation to timbre spaces and the best quality of synthesis. Furthermore, we show that these spaces can generalize to novel instruments and can generate any path between in- struments to understand their timbre relationships. As these spaces are continuous, we study how the traditional acoustic descriptors behave along the latent dimensions. We show that even though descriptors have an overall non-linear topology, they follow a locally smooth evolution. Based on this, we introduce a method for _descriptor-based synthesis_ and show that we can control the descriptors of an instrument while keeping its timbre structure.
+The ubiquity of sound synthesizers has reshaped music production and even entirely defined new music genres. However, the increasing complexity and number of parameters in modern synthesizers make them harder to master. We thus need methods to easily create and explore with synthesizers.
+
+Our paper introduces a radically novel formulation of audio synthesizer control. We formalize it as finding an organized latent audio space that represents the capabilities of a synthesizer, while constructing an invertible mapping to the space of its parameters. By using this formulation, we show that we can address simultaneously *automatic parameter inference, *macro-control learning* and *audio-based preset exploration* within a single model. To solve this new formulation, we rely on Variational Auto-Encoders (VAE) and Normalizing Flows (NF) to organize and map the respective *auditory* and *parameter* spaces. We introduce a new type of NF named *regression flows* that allow to perform an invertible mapping between separate latent spaces, while steering the organization of some of the latent dimensions. We evaluate our proposal against a large set of baseline models and show its superiority in both parameter inference and audio reconstruction. We also show that the model disentangles the major factors of audio variations as latent dimensions, that can be directly used as *macro-parameters*. Finally, we discuss the use of our model in creative applications and its real-time implementation in Ableton Live.
 
 <p align="center">
 <img src="figures/Variational_Timbre.png" height="75%" width="75%">
 </p>
 
-Here, we directly embed the exposed elements
+**Contents**
   * [Animations of descriptor space traversal (topology)](#descriptor-space-animations)
   * [Audio examples of synthesized paths in the space](#synthesis-paths-sounds)
   * [Detailed analysis of perceptual inference abilities](#perceptual-inference-abilities)
   * [Additional data and information](#additional-information)
   
-Otherwise, you can directly download and parse through the different sub-folders of the [docs/](https://github.com/acids-ircam/variational-timbre/tree/master/docs) folder on GitHub to view all of these informations.
-
 ## Descriptor space animations
 
 As detailed in the paper, the space obtained through variational learning are continuous and we can directly sample from these. Therefore, this property allow us to define a dense sampling grid across the space, from which we can generate the spectral distributions. Then, we compute the corresponding descriptors of the distributions at each point of the sampling grid. This allows to plot the continuous evolution of the descriptor topology across the latent spaces. Here, we compare between different models and also provide all topologies across X, Y and Z axes. 
@@ -404,4 +403,4 @@ The combined set of instruments from past studies is plotted as a set of co-occu
 
 ## Code
 
-**The full code will only be released upon acceptance of the paper at the DaFX 2018 conference** and will be available on the corresponding [GitHub repository](https://github.com/acids-ircam/variational-timbre)
+**The full code will only be released upon acceptance of the paper** and will be available on the corresponding [GitHub repository](https://github.com/anonymous124/flow_synthesizer).
