@@ -1,5 +1,5 @@
-title: Flow synthesis
+title: Flow synthesizer
 logo: figures/logo.png
-description: Generative timbre spaces with perceptually-regularized variational audio synthesis
+description: Universal audio synthesizer control with normalizing flows
 google_analytics:
 theme: jekyll-theme-minimal
