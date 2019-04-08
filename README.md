@@ -1,38 +1,25 @@
 # Generative variational timbre spaces
 
-This repository describes the additional material and experiments around "Generative timbre spaces with variational audio synthesis" submitted at DaFX 2018.
+This repository hosts code for reproducing experiments and additional material and results for "Universal audio synthesizer control with normalizing flows" submitted at DaFX 2019.
 
-For a better viewing experience of these additional results, please **visit the [corresponding Github pages website](https://anonymous124.github.io/flow_synthesizer/ "DaFX 2018 - Latent spaces")**
+For a better viewing experience of these additional results, please **visit the corresponding [supporting website]**.
 
-This [supporting page](https://acids-ircam.github.io/variational-timbre/ "DaFX 2018 - Latent spaces") directly embeds the exposed elements
+It directly embeds the following:
   * Supplementary figures
   * Animations of descriptor space traversal (topology)
   * Audio examples of synthesized paths in the space
   * Further detailed space for perceptual inference
   * Additional data and experiments
   
-Otherwise, you can directly parse through the different sub-folders of the main `docs/` folder.
+You can also directly parse through the different sub-directories of the main [`docs`] directory.
 
 ## Code
 
 ### Dependencies
 
-The code has been developed on Python3.5, it should work with other versions of Python, but this have not been tested. We rely on several libraries for different aspects of the code. The complete list is `numpy`, `scipy`, `pytorch`, `matplotlib`, `scikit-learn`, `nsgt`, `scikit-image` and `pyro`
+Code has been developed on Python3.5. It should work with other versions of Python3, but has not been tested. Moreover, we rely on several third-party libraries, listed in [`requirements.txt`]. They can be installed with `pip install -r requirements.txt`. (TODO)
 
-Here is an helper list of pip3 install commands to facilitate your install
-
-```
-pip3 install numpy
-pip3 install scipy
-pip3 install pytorch
-pip3 install matplotlib
-pip3 install scikit-learn
-pip3 install scikit-image
-pip3 install pyro
-pip3 install nsgt
-```
-
-The code can also work on GPUs, in which case you need to add the following dependencies (based on the premises that you have a working GPU with CUDA installed)
+The code can also work on GPUs, in which case you need to add the following dependencies (based on the premises that you have a working GPU with CUDA installed) (TODO)
 
 ### Usage
 
@@ -107,3 +94,11 @@ python3 dafx2018figures.py --models trained_models/acidsInstruments-pitch-16d_fu
 ```
 
 *Important Note* : the nsgt3 package is a quick python3 adaptation of the Thomas Grill's awesome work at the address : https://github.com/grrrr/nsgt
+
+
+
+[//]: # (LINKS)
+
+[supporting website]: https://anonymous124.github.io/flow_synthesizer/ "DaFX 2019 - Flow synthesizer"
+[`docs`]: docs/
+[`requirements.txt`]: requirements.txt
