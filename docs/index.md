@@ -26,11 +26,11 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 </p>
 
 **Contents**
-    * [Audio samples](#audio-samples)
-    * [Latent space exploration]
-    * [Macro-control learning](#macro-control-learning)
-    * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
-    * [Code](#code)
+  * [Audio samples](#audio-samples)
+  * [Latent space exploration]
+  * [Macro-control learning](#macro-control-learning)
+  * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
+  * [Code](#code)
 
 ## Audio samples
 
