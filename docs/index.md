@@ -95,7 +95,7 @@ Below are a few examples of audio reconstructed by the models tested in the pape
 
 In this experiment, we select two audio samples, embed them in the latent space, and continuously interpolate in between. At each interpolated latent point, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
 
-<embed src="figures/interpolation.pdf" height="65%" width="65%" />
+<img src="figures/interpolation.png" height="65%" width="65%">
 
 
 
