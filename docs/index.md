@@ -56,15 +56,15 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
         <td></td>
     </tr>
     <tr>
-        <td>VAE_Flow</td>
+        <td>VAE-Flow</td>
         <td>
             <audio controls preload="auto" data-setup="{}" width="100%"> 
-            <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav> <!-- cool -->
+            <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/mpeg>
             </audio>
         </td>
     </tr>
     <tr>
-        <td>VAE_Flow_post</td>
+        <td>VAE-Flow-post</td>
         <td></td>
     </tr>
 </table>
