@@ -89,54 +89,6 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
     </tr>
 </table>
 
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-    <source src="audio/reconstruction/ae_mel_mse_cnn_mlp_1_batch_1.wav" type="audio/wav">
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-    <source src="audio/reconstruction/cnn_mel_mse_1_batch_1.wav" type="audio/wav">
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/gated_cnn_mel_mse_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/gated_mlp_mel_mse_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/mlp_mel_mse_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/res_cnn_mel_mse_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_cde_iaf_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_2_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_mel_mse_cnn_mlp_1_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_mel_mse_cnn_mlp_2_batch_1.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/wae_mel_mse_cnn_mlp_1_batch_1.wav" type=audio/wav>
-</audio>
-
 
 ## Macro-control learning
 
