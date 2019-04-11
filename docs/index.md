@@ -34,11 +34,6 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the second is its reconstruction by one of the implemented models.
 
-Testing...
-<audio controls> 
-    <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav">
-</audio>
-
 <table>
     <tr>
         <th>Model</th>
@@ -47,22 +42,34 @@ Testing...
     <tr>
         <td>CNN</td>
         <td>
-            <audio controls preload="auto" data-setup="{}" width="100%"> 
-                <source src="audio/reconstruction/cnn_mel_mse_1_batch_1.wav" type="audio/wav">
+            <audio controls> 
+                <source src="audio/reconstruction/cnn_mel_mse_1_batch_1.mp3">
             </audio>
         </td>
     </tr>
     <tr>
         <td>MLP</td>
-        <td></td>
+        <td>
+            <audio controls> 
+                <source src="audio/reconstruction/mlp_mel_mse_1_batch_1.mp3">
+            </audio>
+        </td>
     </tr>
     <tr>
         <td>VAE</td>
-        <td></td>
+        <td>
+            <audio controls> 
+                <source src="audio/reconstruction/vae_mel_mse_cnn_mlp_1_batch_1.mp3">
+            </audio>
+        </td>
     </tr>
     <tr>
         <td>WAE</td>
-        <td></td>
+        <td>
+            <audio controls> 
+                <source src="audio/reconstruction/wae_mel_mse_cnn_mlp_1_batch_1.mp3">
+            </audio>
+        </td>
     </tr>
     <tr>
         <td>VAE-Flow</td>
@@ -76,7 +83,7 @@ Testing...
         <td>VAE-Flow-post</td>
         <td>
             <audio controls> 
-                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type="audio/wav">
+                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.mp3" type="audio/wav">
             </audio>
         </td>
     </tr>
