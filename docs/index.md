@@ -19,7 +19,7 @@ This website presents additional material and experiments around the paper *Univ
 
 The ubiquity of sound synthesizers has reshaped music production and even entirely defined new music genres. However, the increasing complexity and number of parameters in modern synthesizers make them harder to master. We thus need methods to easily create and explore with synthesizers.
 
-Our paper introduces a radically novel formulation of audio synthesizer control. We formalize it as finding an organized latent audio space that represents the capabilities of a synthesizer, while constructing an invertible mapping to the space of its parameters. By using this formulation, we show that we can address simultaneously *automatic parameter inference, *macro-control learning* and *audio-based preset exploration* within a single model. To solve this new formulation, we rely on Variational Auto-Encoders (VAE) and Normalizing Flows (NF) to organize and map the respective *auditory* and *parameter* spaces. We introduce a new type of NF named *regression flows* that allows to perform an invertible mapping between separate latent spaces, while steering the organization of some of the latent dimensions.
+Our paper introduces a radically novel formulation of audio synthesizer control. We formalize it as finding an organized latent audio space that represents the capabilities of a synthesizer, while constructing an invertible mapping to the space of its parameters. By using this formulation, we show that we can address simultaneously *automatic parameter inference*, *macro-control learning* and *audio-based preset exploration* within a single model. To solve this new formulation, we rely on Variational Auto-Encoders (VAE) and Normalizing Flows (NF) to organize and map the respective *auditory* and *parameter* spaces. We introduce a new type of NF named *regression flows* that allows to perform an invertible mapping between separate latent spaces, while steering the organization of some of the latent dimensions.
 
 **Contents**
   * [Audio reconstruction](#audio-reconstruction)
@@ -32,7 +32,7 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 ## Audio reconstruction
 
-Below are a few examples of audio reconstructed by the models tested in the paper. The first sound is a sample drawn from the test set, and the second is its reconstruction.
+Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the second is its reconstruction by one of the implemented models.
 
 <audio controls preload="auto" data-setup="{}" width="100%"> 
 <source src="audio/reconstruction/ae_mel_mse_cnn_mlp_1_batch_1.wav" type=audio/wav>
@@ -128,7 +128,7 @@ And below, the interpolations output by the different models:
 
 ## Vocal sketching
 
-Finally, our models allows vocal sketching, by embedding a recorded vocal sample in the latent space and finding the matching parameters. Below are some examples of how the models respond to several recorded samples.
+Finally, our models allow vocal sketching, by embedding a recorded vocal sample in the latent space and finding the matching parameters. Below are examples of how the models respond to several recorded samples.
 
 
 ## Real-time implementation using Ableton Live
