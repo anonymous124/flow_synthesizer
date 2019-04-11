@@ -68,7 +68,7 @@ Testing...
         <td>VAE-Flow</td>
         <td>
             <audio controls> 
-                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_1_batch_1.wav" type="audio/wav">
+                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_1_batch_1.mp3">
             </audio>
         </td>
     </tr>
