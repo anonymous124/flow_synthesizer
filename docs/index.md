@@ -25,7 +25,6 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
   * [Audio reconstruction](#audio-reconstruction)
   * [Macro-control learning](#macro-control-learning)
   * [Audio space interpolation](#audio-space-interpolation)
-  * [Neighborhood exploration](#neighborhood-exploration)
   * [Vocal sketching](#vocal-sketching)
   * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
   * [Code](#code)
@@ -64,7 +63,7 @@ Below are a few examples of audio reconstructed by the models tested in the pape
 </audio>
 
 <audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav>
+<source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav> <!-- cool -->
 </audio>
 
 <audio controls preload="auto" data-setup="{}" width="100%"> 
@@ -92,7 +91,7 @@ Below are a few examples of audio reconstructed by the models tested in the pape
 
 The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
 
-The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space. The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves that latent dimensions rather encode audio features than simply parameters values.
+The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space ($z_3$ and $z_7$). The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves that latent dimensions rather encode audio features than simply parameters values.
 
 <img src="figures/meta_parameters.png" align="middle">
 
@@ -101,6 +100,8 @@ The following figure presents the evolution of synth parameters and correspondin
 ## Audio space interpolation
 
 In this experiment, we select two audio samples, embed them in the latent space, and continuously interpolate in between. At each interpolated latent point, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
+
+From the figure below, one can also visualize the way spectograms and parameters evolve in the neighborhoods of the two latent points. It is encouraging to see how the spectrograms look alike, even though parameters may vary more.
 
 <img src="figures/interpolation.png" align="middle">
 
@@ -114,7 +115,7 @@ Below are the two audio samples, drawn from the test set:
 <source src="audio/interpolation/p1.wav" type=audio/wav>
 </audio>
 
-And here are the interpolations output by the different models:
+And below, the interpolations output by the different models:
 
 <audio controls preload="auto" data-setup="{}" width="100%"> 
 <source src="audio/interpolation/p0.wav" type=audio/wav>
@@ -125,17 +126,15 @@ And here are the interpolations output by the different models:
 </audio>
 
 
-## Neighorhood exploration
-
-
-
 ## Vocal sketching
 
+Finally, our models allows vocal sketching, by embedding a recorded vocal sample in the latent space and finding the matching parameters. Below are some examples of how the models respond to several recorded samples.
 
 
 ## Real-time implementation using Ableton Live
 
 Not available yet.
+
 
 ## Code
 
