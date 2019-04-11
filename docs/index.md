@@ -83,7 +83,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
         <td>VAE-Flow-post</td>
         <td>
             <audio controls> 
-                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.mp3" type="audio/wav">
+                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.mp3">
             </audio>
         </td>
     </tr>
@@ -94,9 +94,11 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
 
 The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
 
-The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space ($z_3$ and $z_7$). The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves that latent dimensions rather encode audio features than simply parameters values.
+The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space ($$z_3$$ and $$z_7$$). The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves that latent dimensions rather encode audio features than simply parameters values.
 
 <img src="figures/meta_parameters.png" align="middle">
+
+
 
 
 
@@ -110,23 +112,70 @@ From the figure below, one can also visualize the way spectograms and parameters
 
 Below are the two audio samples, drawn from the test set:
 
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/interpolation/p0.wav" type=audio/wav>
+<audio controls> 
+    <source src="audio/interpolation/.mp3">
 </audio>
 
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/interpolation/p1.wav" type=audio/wav>
+<audio controls> 
+    <source src="audio/interpolation/p1.mp3">
 </audio>
 
-And below, the interpolations output by the different models:
+And below, the interpolations output by the different models (TODO):
 
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/interpolation/p0.wav" type=audio/wav>
-</audio>
-
-<audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/interpolation/p1.wav" type=audio/wav>
-</audio>
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Samples</th>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>MLP</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>VAE</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>WAE</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>VAE-Flow</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>VAE-Flow-post</td>
+        <td>
+            <audio controls> 
+                <source src="audio/interpolation/.mp3">
+            </audio>
+        </td>
+    </tr>
+</table>
 
 
 ## Vocal sketching
