@@ -34,6 +34,41 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the second is its reconstruction by one of the implemented models.
 
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Samples</th>
+    </tr>
+    <tr>
+        <td>CNN</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MLP</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VAE</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>WAE</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VAE_Flow</td>
+        <td>
+            <audio controls preload="auto" data-setup="{}" width="100%"> 
+            <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav> <!-- cool -->
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>VAE_Flow_post</td>
+        <td></td>
+    </tr>
+</table>
+
 <audio controls preload="auto" data-setup="{}" width="100%"> 
 <source src="audio/reconstruction/ae_mel_mse_cnn_mlp_1_batch_1.wav" type=audio/wav>
 </audio>
@@ -62,9 +97,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
 <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_cde_iaf_1_batch_1.wav" type=audio/wav>
 </audio>
 
-VAE-Flow: <audio controls preload="auto" data-setup="{}" width="100%"> 
-<source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav> <!-- cool -->
-</audio>
+VAE-Flow: 
 
 <audio controls preload="auto" data-setup="{}" width="100%"> 
 <source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_1_batch_1.wav" type=audio/wav>
