@@ -16,7 +16,7 @@ You can also directly parse through the different sub-directories of the main [`
 
 ### Dependencies
 
-Code has been developed with `Python 3.5`. It should work with other versions of `Python 3`, but has not been tested. Moreover, we rely on several third-party libraries, listed in [`requirements.txt`](requirements.txt). They can be installed with `pip install -r requirements.txt`. (TODO)
+Code has been developed with `Python 3.5`. It should work with other versions of `Python 3`, but has not been tested. Moreover, we rely on several third-party libraries, listed in [`requirements.txt`](requirements.txt). They can be installed with `pip install -r requirements.txt`.
 
 ### Usage
 
