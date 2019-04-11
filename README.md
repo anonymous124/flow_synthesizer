@@ -1,15 +1,13 @@
-# Generative variational timbre spaces
+# Universal audio synthesizer control with normalizing flows
 
 This repository hosts code and additional results for the paper "Universal audio synthesizer control with normalizing flows".
 
-For a better viewing experience, please **visit the corresponding [supporting website]**.
+For a better viewing experience, please **visit the corresponding [supporting website](https://anonymous124.github.io/flow_synthesizer/ "Flow synthesizer")**.
 
-It directly embeds the following:
+It embeds the following:
   * Supplementary figures
-  * Animations of descriptor space traversal (topology)
-  * Audio examples of synthesized paths in the space
-  * Further detailed space for perceptual inference
-  * Additional data and experiments
+  * Audio examples for reconstruction, macro-control learning, neighborhood exploration, interpolation, and vocal sketching
+  * Real-time implementation in Ableton Live
   
 You can also directly parse through the different sub-directories of the main [`docs`](docs) directory.
 
@@ -22,7 +20,5 @@ Code has been developed with `Python 3.5`. It should work with other versions of
 
 ### Usage
 
+(TODO)
 
-[//]: # (LINKS)
-
-[supporting website]: https://anonymous124.github.io/flow_synthesizer/ "Flow synthesizer"
