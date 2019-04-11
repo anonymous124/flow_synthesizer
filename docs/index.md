@@ -59,7 +59,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
         <td>VAE-Flow</td>
         <td>
             <audio controls> 
-                <source src="/audio/reconstruction/vae_flow_mel_mse_cnn_flow_mlp_iaf_1_batch_1.wav" type="audio/wav">
+                <source src="flow_synthesizer/audio/reconstruction/vae_flow_mel_mse_cnn_flow_mlp_iaf_1_batch_1.wav" type="audio/wav">
             </audio>
         </td>
     </tr>
@@ -67,7 +67,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
         <td>VAE-Flow-post</td>
         <td>
             <audio controls> 
-                <source src="/audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type=audio/wav>
+                <source src="flow_synthesizer/audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type="audio/wav">
             </audio>
         </td>
     </tr>
