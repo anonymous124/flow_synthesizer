@@ -34,6 +34,10 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the second is its reconstruction by one of the implemented models.
 
+<audio controls> 
+    <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.wav" type="audio/wav">
+</audio>
+
 <table>
     <tr>
         <th>Model</th>
