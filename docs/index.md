@@ -30,6 +30,7 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
   * [Real-time implementation using Ableton Live](#real-time-implementation-using-ableton-live)
   * [Code](#code)
 
+
 ## Audio reconstruction
 
 Below are a few examples of audio reconstructed by the models tested in the paper. The first sound is a sample drawn from the test set, and the second is its reconstruction.
@@ -89,14 +90,39 @@ Below are a few examples of audio reconstructed by the models tested in the pape
 
 ## Macro-control learning
 
+The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
+
+The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space. The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves that latent dimensions rather encode audio features than simply parameters values.
+
+<img src="figures/meta_parameters.png" align="middle">
+
 
 
 ## Audio space interpolation
 
 In this experiment, we select two audio samples, embed them in the latent space, and continuously interpolate in between. At each interpolated latent point, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
 
-<img src="figures/interpolation.png" height="65%" width="65%">
+<img src="figures/interpolation.png" align="middle">
 
+Below are the two audio samples, drawn from the test set:
+
+<audio controls preload="auto" data-setup="{}" width="100%"> 
+<source src="audio/interpolation/p0.wav" type=audio/wav>
+</audio>
+
+<audio controls preload="auto" data-setup="{}" width="100%"> 
+<source src="audio/interpolation/p1.wav" type=audio/wav>
+</audio>
+
+And here are the interpolations output by the different models:
+
+<audio controls preload="auto" data-setup="{}" width="100%"> 
+<source src="audio/interpolation/p0.wav" type=audio/wav>
+</audio>
+
+<audio controls preload="auto" data-setup="{}" width="100%"> 
+<source src="audio/interpolation/p1.wav" type=audio/wav>
+</audio>
 
 
 ## Neighorhood exploration
