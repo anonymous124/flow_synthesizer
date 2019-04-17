@@ -100,11 +100,421 @@ The latent dimensions can be seen as meta-parameters for the synthesizer that na
 
 The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space ($$z_3$$ and $$z_7$$). The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
 
-<img src="figures/meta_parameters.png" align="middle">
 
+<div style="width: 90%; margin: 0 auto">
 
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{5}\)</p>
+    <img src="audio/meta_parameters/z5/z5.png" width="100%">
 
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z5/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
 
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{11}\)</p>
+    <img src="audio/meta_parameters/z11/z11.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z11/dim_7.mp3">
+        </audio>
+    </div>
+    
+    <br/>
+    <p align="middle"><b>Click <a href="javascript:look('divMetaParams');" title="More comparisons">here</a> to see more examples</b></p>
+    
+    <div id="divMetaParams" style="display: none;">
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{6}\)</p>
+    <img src="audio/meta_parameters/z6/z6.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z6/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{8}\)</p>
+    <img src="audio/meta_parameters/z8/z8.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z8/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{9}\)</p>
+    <img src="audio/meta_parameters/z9/z9.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z9/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{15}\)</p>
+    <img src="audio/meta_parameters/z15/z15.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z15/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{16}\)</p>
+    <img src="audio/meta_parameters/z16/z16.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z16/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{19}\)</p>
+    <img src="audio/meta_parameters/z19/z19.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z19/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{20}\)</p>
+    <img src="audio/meta_parameters/z20/z20.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z20/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{24}\)</p>
+    <img src="audio/meta_parameters/z24/z24.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z24/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{25}\)</p>
+    <img src="audio/meta_parameters/z25/z25.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z25/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{26}\)</p>
+    <img src="audio/meta_parameters/z26/z26.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z26/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    <p style="text-align: center; font-size: 20px">Metaparameter \(z_{28}\)</p>
+    <img src="audio/meta_parameters/z28/z28.png" width="100%">
+
+    <div align="middle">
+        <audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_0.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_1.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_2.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_3.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_4.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_5.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_6.mp3">
+        </audio><!--
+        --><audio controls style="width: 10.5%; padding: 0.5%">
+            <source src="audio/meta_parameters/z28/dim_7.mp3">
+        </audio>
+    </div>
+    <br/>
+        
+    </div>
+
+    
+</div>
+<br/>
 
 ## Audio space interpolation
 
@@ -194,5 +604,5 @@ Not available yet.
 
 ## Code
 
-The full code will only be released after the end of the review process and will be available on the corresponding [GitHub repository](https://github.com/anonymous124/flow_synthesizer).
+The full code will only be released after the end of the review process and will be available on the corresponding [GitHub repository](https://github.com/anonymous10.54/flow_synthesizer).
 
