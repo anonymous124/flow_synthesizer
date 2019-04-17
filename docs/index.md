@@ -34,65 +34,76 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 ## Audio reconstruction
 
-Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the second is its reconstruction by one of the implemented models.
+Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the following are its reconstructions by the implemented models.
 
-<table>
-    <tr>
-        <th>Model</th>
-        <th>Samples</th>
-        <th>Spectrogram</th>
-        <th>Parameters</th>
-    </tr>
-    <tr>
-        <td>CNN</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/cnn_mel_mse_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>MLP</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/mlp_mel_mse_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/vae_mel_mse_cnn_mlp_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>WAE</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/wae_mel_mse_cnn_mlp_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE-Flow</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_mlp_iaf_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE-Flow-post</td>
-        <td>
-            <audio controls> 
-                <source src="audio/reconstruction/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1_batch_1.mp3">
-            </audio>
-        </td>
-    </tr>
-</table>
+<div style="width: 90%; margin: 0 auto">
+    <table style="margin: 0px auto;">
+        <tr>
+            <th>Model</th>
+            <th>Sample</th>
+            <th>Spectrogram</th>
+            <th>Parameters</th>
+        </tr>
+        <tr>
+            <td><b>Original preset</b></td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/original.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>VAE-Flow-post</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/vae_flow_mel_mse_cnn_flow_kl_f_iaf_1.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>VAE-Flow</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/vae_flow_mel_mse_cnn_mlp_iaf_1.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>CNN</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/cnn_mel_mse_1.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>MLP</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/mlp_mel_mse_1.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>VAE</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/vae_mel_mse_cnn_mlp_1.mp3">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>WAE</td>
+            <td>
+                <audio controls> 
+                    <source src="audio/reconstruction/batch1_example0/wae_mel_mse_cnn_mlp_1.mp3">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
 
+<br/>
 
 ## Macro-control learning
 
