@@ -98,7 +98,7 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
 
 The latent dimensions can be seen as meta-parameters for the synthesizer that naturally arise from our framework. Moreover, as they act in the latent audio space, one could hope they impact audio features in a smoother way than native parameters.
 
-The following figure presents the evolution of synth parameters and corresponding spectrogram while moving along two dimensions of the latent space ($$z_3$$ and $$z_7$$). The spectrograms show a smooth variation in audio features, while parameters move in a clearly non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
+The following examples present the evolution of synth parameters and corresponding spectrogram while moving along a dimension of the latent space. Spectrograms generally show a smooth variation in audio features, while parameters move in a non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
 
 
 <div style="width: 90%; margin: 0 auto">
