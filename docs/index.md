@@ -533,8 +533,7 @@ In this experiment, we select two audio samples, embed them in the latent space,
 
 From the figure below, one can also visualize the way spectograms and parameters evolve in the neighborhoods of the two latent points. It is encouraging to see how the spectrograms look alike, even though parameters may vary more.
 
-<img src="figures/interpolation.png" style="width: 70%; display: inline; float: right">
-
+<img src="figures/interpolation.png" style="width: 70%">
 
 Below are the two audio samples, drawn from the test set:
 
@@ -602,7 +601,6 @@ And below, the interpolations output by the different models (TODO):
         </td>
     </tr>
 </table>
-
 
 ## Vocal sketching
 
