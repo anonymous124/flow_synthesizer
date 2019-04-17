@@ -40,6 +40,8 @@ Our first experiment consists in evaluating the reconstruction ability of our mo
     <tr>
         <th>Model</th>
         <th>Samples</th>
+        <th>Spectrogram</th>
+        <th>Parameters</th>
     </tr>
     <tr>
         <td>CNN</td>
