@@ -36,8 +36,8 @@ Our paper introduces a radically novel formulation of audio synthesizer control.
 
 Our first experiment consists in evaluating the reconstruction ability of our model. Reconstruction is done *via* parameter inference, which means an audio sample is embedded in the latent space, then mapped to synth parameters, that are used to synthesize the reconstructed audio. In the examples below, the first sound is a sample drawn from the test set, and the following are its reconstructions by the implemented models.
 
-<div style="width: 90%; margin: 0 auto">
-    <table style="margin: 0px auto;">
+<div class="figure">
+    <table>
         <tr>
             <th>Model</th>
             <th>Sample</th>
@@ -112,7 +112,7 @@ The latent dimensions can be seen as meta-parameters for the synthesizer that na
 The following examples present the evolution of synth parameters and corresponding spectrogram while moving along a dimension of the latent space. Spectrograms generally show a smooth variation in audio features, while parameters move in a non-independent and less smooth fashion. This proves latent dimensions rather encode audio features than simply parameters values.
 
 
-<div style="width: 90%; margin: 0 auto">
+<div class="figure">
 
     <p style="text-align: center; font-size: 20px">Metaparameter \(z_{5}\)</p>
     <img src="audio/meta_parameters/z5/z5.png" width="100%">
@@ -529,78 +529,84 @@ The following examples present the evolution of synth parameters and correspondi
 
 ## Audio space interpolation
 
-In this experiment, we select two audio samples, embed them in the latent space, and continuously interpolate in between. At each interpolated latent point, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
+In this experiment, we select two audio samples, and embed them in the latent space as $$\mathbf{z}_0$$ and $$\mathbf{z}_1$$. We then explore their neighborhoods, and continuously interpolate in between. At each latent point in the neighborhoods and interpolation, we are able to output the corresponding synthesizer parameters and thus to synthesize audio.
 
-From the figure below, one can also visualize the way spectograms and parameters evolve in the neighborhoods of the two latent points. It is encouraging to see how the spectrograms look alike, even though parameters may vary more.
+On the figure below, one can listen to the output and visualize the way spectograms and parameters evolve. It is encouraging to see how the spectrograms look alike in the neighborhoods of $$\mathbf{z}_0$$ and $$\mathbf{z}_1$$, even though parameters may vary more.
 
-<img src="figures/interpolation.png" style="width: 70%">
+<div class="figure">
+    <table class="noRowLine neighborhood audioTable">
+        <tr>
+            <th rowspan="2">Audio</th>
+            <th colspan="2">\(\mathbf{z}_0 + \mathcal{N}(0, 0.1)\)</th>
+            <th rowspan="2">Audio space</th>
+            <th colspan="2">\(\mathbf{z}_1 + \mathcal{N}(0, 0.1)\)</th>
+            <th rowspan="2">Audio</th>
+        </tr>
+        <tr>
+            <th>Parameters</th>
+            <th>Spectrogram</th>
+            <th>Spectrogram</th>
+            <th>Parameters</th>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td>PARAMS IMG</td>
+            <td>SPECTROGRAM</td>
+            <td rowspan="5">AUDIO SPACE IMG</td>
+            <td>SPECTROGRAM</td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td>PARAMS IMG</td>
+            <td>SPECTROGRAM</td>
+            <td>SPECTROGRAM</td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td>PARAMS IMG</td>
+            <td>SPECTROGRAM</td>
+            <td>SPECTROGRAM</td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td>PARAMS IMG</td>
+            <td>SPECTROGRAM</td>
+            <td>SPECTROGRAM</td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td>PARAMS IMG</td>
+            <td>SPECTROGRAM</td>
+            <td>SPECTROGRAM</td>
+            <td>PARAMS IMG</td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+    </table>
+</div>
+<div class="figure">
+    <table class="noRowLine neighborhood interpolation">
+        <tr>
+            <td colspan="6">INTERPOLATION IMG</td>
+        </tr>
+        <tr>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+            <td><audio controls><source src=""></audio></td>
+        </tr>
+    </table>
+</div>
 
-Below are the two audio samples, drawn from the test set:
-
-<audio controls> 
-    <source src="audio/interpolation/.mp3">
-</audio>
-
-<audio controls> 
-    <source src="audio/interpolation/p1.mp3">
-</audio>
-
-And below, the interpolations output by the different models (TODO):
-
-<table>
-    <tr>
-        <th>Model</th>
-        <th>Samples</th>
-    </tr>
-    <tr>
-        <td>CNN</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>MLP</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>WAE</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE-Flow</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-    <tr>
-        <td>VAE-Flow-post</td>
-        <td>
-            <audio controls> 
-                <source src="audio/interpolation/.mp3">
-            </audio>
-        </td>
-    </tr>
-</table>
 
 ## Vocal sketching
 
